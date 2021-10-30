@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<title>signup</title>
+{% endblock title %}
+
+
+
+{% block body %}
+
+<h3>this is signup page</h3>
+<div class="container">
+    <div class="col-lg-5 mx-auto p-0 shadow ">
+        <div class="alert alert-info"><strong>register form</strong> </div>
+        <form action="">
+            {{form.as_p}}
+            <hr>
+        <div class="text text-center">
+            <input class="text-center btn btn-success mb-2" type="button" value="create account">
+        </div>
+        </form>
+
+    </div>
+
+
+</div>
+
+
+{% endblock body %}
