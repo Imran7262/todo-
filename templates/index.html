@@ -22,10 +22,13 @@
           <div class="collapse navbar-collapse d-inline-flex" id="navbarNav">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">{{request.user}}</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/login">login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/signup">signup</a>
+                <a class="nav-link active" href="/signup">signup</a>
               </li>
              
               
@@ -35,8 +38,9 @@
       </nav>    
 
 
-    <h1>Hello, world!</h1>
+
     {%  block body %}
+    <h1>Hello, world!</h1>
     {%  endblock body %}
 
     <!-- Optional JavaScript; choose one of the two! -->

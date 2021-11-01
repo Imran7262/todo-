@@ -6,5 +6,20 @@
 
 
 {% block body %}
-<h3>this is sign in page</h3>
+<h3 class="text-center">this is sign in page</h3>
+<div class="container text-center">
+    <form action="lgin" method="POST">
+        {% csrf_token %}
+
+            <div class=" col-lg-5 alert offset-3 alert-info "><H2>LOGIN</H2>
+              {{form.as_p}}
+            </div>
+            <div>
+                <input  class="alert alert-success" type="submit">
+            </div>
+
+        </div>
+    </form>
+</div>
+
 {% endblock body %}
