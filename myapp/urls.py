@@ -20,6 +20,8 @@ from . import views
 urlpatterns = [
     path('',views.index , name='index'),
     path('lgin',views.lgin , name='lgin'),
-
+    path('lgout',views.lgout , name='lgout'),
     path('signup',views.signup, name='signup'),
+    path('add_todo',views.add_todo, name='add_todo'),
+    path('dlt/<int:id>',views.dlt, name='dlt'),
 ]
